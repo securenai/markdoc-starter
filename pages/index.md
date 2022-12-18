@@ -11,21 +11,41 @@ This is a full-featured boilerplate for a creating a documentation website using
 
 ## Setup
 
-First, clone this repo and install the dependencies required:
+First, clone this repo and install the dependencies required: hello
 
-```bash
+{% highlightCode language="bash" %}
+```
 npm install
 # or
 yarn install
 ```
+{% /highlightCode %}
 
 Then, run the development server:
 
-```bash
+{% highlightCode language="bash" %}
+```
 npm run dev
 # or
 yarn dev
 ```
+{% /highlightCode %}
+
+{% highlightCode language="javascript" %}
+```
+function makeid(length) {
+    var result           = '';
+    var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    var charactersLength = characters.length;
+    for ( var i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
+    return result;
+}
+
+console.log(makeid(5));
+```
+{% /highlightCode %}
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
