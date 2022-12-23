@@ -1,11 +1,15 @@
 import React from 'react';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const items = [
   {
     title: 'Get started',
-    links: [{href: '/docs', children: 'Overview'}],
+    links: [{ href: '/docs', children: 'Overview' }],
+  },
+  {
+    title: 'Section 2',
+    links: [{ href: '/docs2', children: 'Test Page' }],
   },
 ];
 
@@ -21,7 +25,11 @@ export function SideNav() {
             {item.links.map((link) => {
               const active = router.pathname === link.href;
               return (
-                <li key={link.href} className={active ? 'active' : ''}>
+                <li
+                  key={link.href}
+                  className={active ? 'active' : ''}
+                  style={{ paddingLeft: '15px' }}
+                >
                   <Link {...link} />
                 </li>
               );

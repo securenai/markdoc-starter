@@ -5,6 +5,8 @@ description: How to get started with Markdoc
 
 # Full Next.js example
 
+(This is an example of the first hierarchy tier).
+
 {% callout %}
 This is a full-featured boilerplate for a creating a documentation website using Markdoc and Next.js.
 {% /callout %}
@@ -14,24 +16,29 @@ This is a full-featured boilerplate for a creating a documentation website using
 First, clone this repo and install the dependencies required: hello
 
 {% highlightCode language="bash" %}
+
 ```
 npm install
 # or
 yarn install
 ```
+
 {% /highlightCode %}
 
 Then, run the development server:
 
 {% highlightCode language="bash" %}
+
 ```
 npm run dev
 # or
 yarn dev
 ```
+
 {% /highlightCode %}
 
 {% highlightCode language="javascript" %}
+
 ```
 function makeid(length) {
     var result           = '';
@@ -45,6 +52,7 @@ function makeid(length) {
 
 console.log(makeid(5));
 ```
+
 {% /highlightCode %}
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

@@ -73,6 +73,9 @@ export default function MyApp({ Component, pageProps }: AppProps<MyAppProps>) {
       </Head>
       <TopNav>
         <Link href="/docs">Docs</Link>
+        <Link href="https://github.com/Jumio">github</Link>
+        <Link href="https://www.jumio.com/">site</Link>
+        <Link href="https://medium.com/jumio">medium</Link>
       </TopNav>
       <div className="page">
         <SideNav />
